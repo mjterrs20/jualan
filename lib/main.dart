@@ -3,12 +3,16 @@ import 'package:jualan/pages/login.dart';
 import 'package:jualan/pages/home.dart';
 import 'package:jualan/pages/splashscreen.dart';
 import 'package:jualan/pages/test.dart';
+import 'package:jualan/pages/testing.dart';
 import 'package:jualan/pages/timeline.dart';
 import 'package:jualan/pages/semua_kategori.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:jualan/pages/test_api.dart';
+import 'package:jualan/pages/test_api_get.dart';
 
 
 void main() {
-  return runApp(Login());
+  return runApp(TestApiGet());
 }
 
 class MyApp extends StatelessWidget {
@@ -62,3 +66,35 @@ class TimeLine extends StatelessWidget {
     );
   }
 }
+
+class Test extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Coba Testing Http',
+      home:  TestPage(),
+    );
+  }
+}
+
+class TestApi extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Testing API',
+      home:  TestApiPage(),
+    );
+  }
+}
+
+class TestApiGet extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Testing API',
+      home:  TestApiGetPage(),
+    );
+  }
+}
+
+
