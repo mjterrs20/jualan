@@ -6,13 +6,12 @@ import 'package:jualan/pages/test.dart';
 import 'package:jualan/pages/testing.dart';
 import 'package:jualan/pages/timeline.dart';
 import 'package:jualan/pages/semua_kategori.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:jualan/pages/test_api.dart';
 import 'package:jualan/pages/test_api_get.dart';
-
+import 'package:jualan/pages/test_api_get_list.dart';
 
 void main() {
-  return runApp(TestApiGet());
+  return runApp(TestApiListGet());
 }
 
 class MyApp extends StatelessWidget {
@@ -93,6 +92,16 @@ class TestApiGet extends StatelessWidget {
     return MaterialApp(
       title: 'Testing API',
       home:  TestApiGetPage(),
+    );
+  }
+}
+
+class TestApiListGet extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Testing API',
+      home:  TestApiGetListPage(),
     );
   }
 }
