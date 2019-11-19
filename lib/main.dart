@@ -9,9 +9,10 @@ import 'package:jualan/pages/semua_kategori.dart';
 import 'package:jualan/pages/test_api.dart';
 import 'package:jualan/pages/test_api_get.dart';
 import 'package:jualan/pages/test_api_get_list.dart';
+import 'package:jualan/pages/berita.dart';
 
 void main() {
-  return runApp(TestApiListGet());
+  return runApp(Berita());
 }
 
 class MyApp extends StatelessWidget {
@@ -106,4 +107,13 @@ class TestApiListGet extends StatelessWidget {
   }
 }
 
+class Berita extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Testing API',
+      home:  BeritaPage(),
+    );
+  }
+}
 
